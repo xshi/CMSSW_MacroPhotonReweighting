@@ -264,7 +264,8 @@ RooAbsPdf * readFitMass(const string & inputFileName, const string & plotFileNam
 	TFile f( inputFileName.c_str() );
 	RooWorkspace * w = (RooWorkspace*) f.Get("zMassFit");
 
-	RooRealVar * zmass = w->var("mass");
+	//RooRealVar * zmass = w->var("mass");
+	RooRealVar * zmass = new RooRealVar("mass", "mass", 76, 106, "GeV");
 	RooAbsPdf * pdf = w->pdf("massPDF");
 	RooAbsData * data = w->data("massEvents");
 

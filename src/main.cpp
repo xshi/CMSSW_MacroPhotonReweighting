@@ -70,11 +70,11 @@ const char * gptMuFileName = "gptMu_DATA.ps";
 int main(int argc, const char * argv[]) {
 	gROOT->ProcessLine("#include <vector>");
 
-	fitMass("SamplesPreselected/MC7TeV_DYJetsToLL_muPresel.root", "muMassFit.root");
-	readFitMass("muMassFit.root", "zMass_mu.ps");
+	//fitMass("SamplesPreselected/MC7TeV_DYJetsToLL_muPresel.root", "muMassFit.root");
+	RooAbsPdf * muMassFit = readFitMass("muMassFit.root", "zMass_mu.ps");
 
-	fitMass("SamplesPreselected/MC7TeV_DYJetsToLL_elePresel.root", "eleMassFit.root");
-	readFitMass("eleMassFit.root", "zMass_ele.ps");
+	//fitMass("SamplesPreselected/MC7TeV_DYJetsToLL_elePresel.root", "eleMassFit.root");
+	RooAbsPdf * eleMassFit = readFitMass("eleMassFit.root", "zMass_ele.ps");
 
 //	vector<Fit> zfitsEle;
 //	fitPt(zfitsEle, eleDY, false, zptEleFileName);
