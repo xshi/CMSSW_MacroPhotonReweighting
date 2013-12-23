@@ -1,42 +1,26 @@
 #ifndef FITS_H
 #define FITS_H
 
-#include <TROOT.h>
 #include <string>
-#include <RooAbsPdf.h>
+#include <TF1.h>
 
-class TF1;
-class TH1D;
-class RooVoigtian;
+class RooWorkspace;
 class RooRealVar;
+class RooAbsPdf;
+class RooDataSet;
+class RooAbsData;
+class PhotonSample;
+class RooFitResult;
+class Event;
+class TF1;
+class TGraph;
 
-struct Fit {
-	double low;
-	double high;
-	double a;
-	double b;
-	double c;
-	double N;
-	TF1 * ptFun;
-	double alow;
-	double ahigh;
-	double blow;
-	double bhigh;
-	double clow;
-	double chigh;
-	TH1D * histo;
-
-	Fit( double l, double h );
-	Fit( const Fit & fit );
-	~Fit();
-	Fit & operator=( const Fit & fit );
-	TH1D * buildHisto(int nBins, double lowE, double highE, Color_t col = kBlack);
-};
-
-void fitRange(const std::string & fileName, const std::string & varName, Fit & fit, bool useWeights = false, TH1D * histo = 0 );
-void fitPt(std::vector<Fit> & fits, const char * fileName, bool useWeights, const char * outName);
-
+TGraph readPtFit(const std::string & inputFileName, unsigned cat, double xmin, double xmax, const std::string & fitName);
+RooWorkspace * readMassFit(const std::string & inputFileName, const std::string & plotFileName);
 void fitMass(const std::string & inputFileName, const std::string & outputFileName);
-RooAbsPdf * readFitMass(const std::string & inputFileName, const std::string & plotFileName);
-
+bool fitPt(const std::vector<PhotonSample> & photonSamples, bool useWeights, bool isData, unsigned category, const std::string & fitName);
+TF1 fitPtRange(RooRealVar & pt, RooAbsPdf & ptPDF, RooDataSet & ptEvents, unsigned category, const std::string & fitName, double xmin, double xmax);
+TF1 readInFitParameters(const RooFitResult * fitR, const std::string & name, double xmin, double xmax, const std::vector<RooRealVar *> & params);
+Double_t ptSpectrum(Double_t * x, Double_t * par);
+RooAbsData * bootstrap(const RooDataSet & dataset, const std::string &);
 #endif

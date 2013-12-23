@@ -1,0 +1,74 @@
+[
+	{
+		"sampleName" : "MC8TeV_WJets",
+		"inputDir" : "Samples",
+		"outputDir" : "Samples/Muon",
+		"preselName" : "_phPresel",
+		"ptRewName" : "_ptRew",
+		"njRewName" : "_njRew",
+		"nvRewName" : "_nvRew",
+		"normRewName" : "_normRew",
+		"xsection" : 37509,
+		"type" : "EWKMu"
+	},
+	{
+		"sampleName" : "MC8TeV_WJets",
+		"inputDir" : "Samples",
+		"outputDir" : "Samples/Electron",
+		"preselName" : "_phPresel",
+		"ptRewName" : "_ptRew",
+		"njRewName" : "_njRew",
+		"nvRewName" : "_nvRew",
+		"normRewName" : "_normRew",
+		"xsection" : 37509,
+		"type" : "EWKEle"
+	},
+	{
+		"sampleName" : "MC8TeV_WG",
+		"inputDir" : "Samples",
+		"outputDir" : "Samples/Muon",
+		"preselName" : "_phPresel",
+		"ptRewName" : "_ptRew",
+		"njRewName" : "_njRew",
+		"nvRewName" : "_nvRew",
+		"normRewName" : "_normRew",
+		"xsection" : 461.6,
+		"type" : "EWKMu"
+	},
+	{
+		"sampleName" : "MC8TeV_WG",
+		"inputDir" : "Samples",
+		"outputDir" : "Samples/Electron",
+		"preselName" : "_phPresel",
+		"ptRewName" : "_ptRew",
+		"njRewName" : "_njRew",
+		"nvRewName" : "_nvRew",
+		"normRewName" : "_normRew",
+		"xsection" : 461.6,
+		"type" : "EWKEle"
+	},
+	{
+		"sampleName" : "MC8TeV_ZG",
+		"inputDir" : "Samples",
+		"outputDir" : "Samples/Muon",
+		"preselName" : "_phPresel",
+		"ptRewName" : "_ptRew",
+		"njRewName" : "_njRew",
+		"nvRewName" : "_nvRew",
+		"normRewName" : "_normRew",
+		"xsection" : 123.9,
+		"type" : "EWKMu"
+	},
+	{
+		"sampleName" : "MC8TeV_ZG",
+		"inputDir" : "Samples",
+		"outputDir" : "Samples/Electron",
+		"preselName" : "_phPresel",
+		"ptRewName" : "_ptRew",
+		"njRewName" : "_njRew",
+		"nvRewName" : "_nvRew",
+		"normRewName" : "_normRew",
+		"xsection" : 123.9,
+		"type" : "EWKEle"
+	}
+]

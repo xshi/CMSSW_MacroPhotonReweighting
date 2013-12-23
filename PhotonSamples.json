@@ -1,0 +1,102 @@
+[
+//	{
+//		"sampleName" : "Data8TeV_DoubleElectron2012",
+//		"inputDir" : "Samples",
+//		"outputDir" : "Samples/Electron",
+//		"preselName" : "_phPresel",
+//		"ptRewName" : "ptRew",
+//		"njRewName" : "_njRew",
+//		"nvRewName" : "_nvRew",
+//		"nEvt" : 1,
+//		"xsection" : 1,
+//		"type" : "PhotonEle"
+//	},
+//	{
+//		"sampleName" : "Data8TeV_Photon2012",
+//		"inputDir" : "Samples",
+//		"outputDir" : "Samples/Electron",
+//		"preselName" : "_phPresel",
+//		"ptRewName" : "ptRew",
+//		"njRewName" : "_njRew",
+//		"nvRewName" : "_nvRew",
+//		"nEvt" : 1,
+//		"xsection" : 1,
+//		"type" : "PhotonEle"
+//	},
+	{
+		"sampleName" : "Data8TeV_AllPhoton2012",
+		"inputDir" : "Samples",
+		"outputDir" : "Samples/Electron",
+		"preselName" : "_phPresel",
+		"ptRewName" : "_ptRew",
+		"njRewName" : "_njRew",
+		"nvRewName" : "_nvRew",
+		"normRewName" : "_normRew",
+		"nEvt" : 1,
+		"xsection" : 1,
+		"type" : "PhotonEle"
+	},
+//	{
+//		"sampleName" : "Data8TeV_DoubleElectron2012",
+//		"inputDir" : "Samples",
+//		"outputDir" : "Samples/Muon",
+//		"preselName" : "_phPresel",
+//		"ptRewName" : "ptRew",
+//		"njRewName" : "_njRew",
+//		"nvRewName" : "_nvRew",
+//		"nEvt" : 1,
+//		"xsection" : 1,
+//		"type" : "PhotonMu"
+//	},
+//	{
+//		"sampleName" : "Data8TeV_Photon2012",
+//		"inputDir" : "Samples",
+//		"outputDir" : "Samples/Muon",
+//		"preselName" : "_phPresel",
+//		"ptRewName" : "ptRew",
+//		"njRewName" : "_njRew",
+//		"nvRewName" : "_nvRew",
+//		"nEvt" : 1,
+//		"xsection" : 1,
+//		"type" : "PhotonMu"
+//	},
+	{
+		"sampleName" : "Data8TeV_AllPhoton2012",
+		"inputDir" : "Samples",
+		"outputDir" : "Samples/Muon",
+		"preselName" : "_phPresel",
+		"ptRewName" : "_ptRew",
+		"njRewName" : "_njRew",
+		"nvRewName" : "_nvRew",
+		"normRewName" : "_normRew",
+		"nEvt" : 1,
+		"xsection" : 1,
+		"type" : "PhotonMu"
+	},
+	{
+		"sampleName" : "Data8TeV_DoubleElectron2012_elePresel",
+		"inputDir" : "Samples/ZJetsData",
+		"outputDir" : "Samples/ZJetsData",
+		"preselName" : "",
+		"ptRewName" : "",
+		"njRewName" : "",
+		"nvRewName" : "",
+		"normRewName" : "",
+		"nEvt" : 1,
+		"xsection" : 1,
+		"type" : "ZJetsEle"
+	},
+	{
+		"sampleName" : "Data8TeV_AllMu2012_muPresel",
+		"inputDir" : "Samples/ZJetsData",
+		"outputDir" : "Samples/ZJetsData",
+		"preselName" : "",
+		"ptRewName" : "",
+		"njRewName" : "",
+		"nvRewName" : "",
+		"normRewName" : "",
+		"nEvt" : 1,
+		"xsection" : 1,
+		"type" : "ZJetsMu"
+	}
+]

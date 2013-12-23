@@ -3,9 +3,11 @@ HEADERS = src/*.h
 
 NAME = photons
 
-$(NAME) : $(SRCS) $(HEADERS)
-	cd src; make
+$(NAME) : src/$(NAME)
 	cp src/$(NAME) $(NAME)
+
+src/$(NAME) : $(SRCS) $(HEADERS) ../MacroLibrary/libHZZ2l2nu.a
+	cd src; make
 
 clean :
 	rm $(NAME)
